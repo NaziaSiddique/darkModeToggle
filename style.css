@@ -89,6 +89,9 @@ section {
   padding: 50px;
   background-color: var(--color-secondary-m);
   transition: all 0.5s ease-in-out;
+  border-radius: 10%;
+  align-items: center;
+  margin: 10px;
 }
 
 section h2 {
