@@ -46,3 +46,41 @@ input[type='checkbox'] {
   position: relative;
   margin: 50px;
 }
+
+input:checked[type='checkbox'] {
+  background-color: #d3de32;
+}
+
+input:not(:checked)[type='checkbox'] {
+  background-color: #900d0d;
+}
+
+input[type='checkbox']::before,
+input[type='checkbox']::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+input[type='checkbox']::before {
+  left: 0.5rem;
+}
+
+input[type='checkbox']::after {
+  right: 0.5rem;
+}
+
+input:checked[type='checkbox']::before {
+  left: 37%;
+  box-shadow: none;
+}
+
+input:checked[type='checkbox']::after {
+  right: 38%;
+  box-shadow: none;
+}
