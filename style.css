@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color-primary: #333;
+  --color-secondary: #fff;
+  --color-secondary-m: hsla(0, 0%, 100%, 0.5);
+}
+
+html[data-theme='dark'] {
+  --color-primary: #fff;
+  --color-secondary: #333;
+  --color-secondary-m: rgba(51, 51, 51, 0.5);
+}
